@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.2.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <h1>Calcul de votre IMC</h1>
+    <hr>
+    <section id="userInput">
+        <h2>Calculateur</h2>
+        <form action="">
+            <label for="userSize">Votre taille (en cm)</label>
+            <input type="number" id="userSize" placeholder="ex. pour 1,60 m > 160">
+            <label for="userWeight">Votre poids (en kg)</label>
+            <input type="number" id="userWeight" placeholder="ex. pour 70 kg > 70">
+            <input type="submit" id="submitButton" value="JE CALCULE MON IMC">
+        </form>
+        <p id="inputError" class="hidden"></p>
+    </section>
+    <section id="userResult" class="hidden">
+        <h2>Résultat</h2>
+        <p>Votre IMC (Indice de masse corporelle) est de :</p>
+        <div id="numResult"></div>
+        <div id="textResult"></div>
+    </section>
+</body>
+</html>
